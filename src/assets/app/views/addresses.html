@@ -1,0 +1,44 @@
+<section class="main-content">
+  <h1 class="icons orders">Seus Endereços</h2>
+  <p>Aqui você cadastra todos os endereços que deseja receber os nossos pedidos</p>
+  <ul>
+    <li class="default-box address-item" ng-repeat="address in addresses" ng-include="partials.address"></li>
+  </ul>
+  <button type="button" class="default-button blue" ng-if="!newAddress" ng-click="addNewAddress()">Adicionar novo endereço</button>
+  <div ng-if="newAddress">
+    <h2 class="section-title">Incluir novo endereço</h2>
+    <div class="add-new-address default-box" >
+      <div class="info-item-holder grid-full">
+        <strong>Nome do destinatário:</strong>
+        <input type="text"  ng-model="newAddress.receiverName" />
+      </div>
+      <div class="info-item-holder">
+        <strong>Rua:</strong>
+        <input type="text"  ng-model="newAddress.street" />
+      </div>
+      <div class="info-item-holder">
+        <strong>Número:</strong>
+        <input type="text"  ng-model="newAddress.number" />
+      </div>
+      <div class="info-item-holder">
+        <strong>Bairro:</strong>
+        <input type="text"  ng-model="newAddress.neighborhood" />
+      </div>
+      <div class="info-item-holder">
+        <strong>CEP:</strong>
+        <input type="text"  ng-model="newAddress.cep" />
+      </div>
+      <div class="info-item-holder">
+        <strong>Cidade:</strong>
+        <input type="text"  ng-model="newAddress.city" />
+      </div>
+      <div class="info-item-holder">
+        <strong>Estado:</strong>
+        <input type="text"  ng-model="newAddress.state" />
+      </div>
+      <div class="buttons-holder">
+        <button type="button" class="default-button blue" ng-click="saveNewAddress()">Salvar endereço</button>
+        <button type="button" class="default-button gray" ng-click="cancelNewAddress()">Cancelar</button>  
+      </div>
+  </div>
+</section>

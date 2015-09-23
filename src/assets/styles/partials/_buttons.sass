@@ -1,0 +1,87 @@
+
+// placeholders
+%button
+  border: none
+  border-radius: 4px
+  font-weight: bold
+  font-size: $standard-size
+  line-height: 1
+  outline-color: transparent
+  padding: $standard-size
+  position: relative
+  text-transform: uppercase
+
+.button
+
+  &-primary
+    @extend %button
+    background-color: $color-accent
+    box-shadow: 2px 2px 0 0 $color-accent-dark
+    color: $color-accent-darkest
+
+    &:hover
+      background-color: lighten( $color-accent, 7.5% )
+
+    &:active
+      background-color: lighten( $color-accent, 7.5% )
+      box-shadow: 1px 1px 0 0 $color-accent-dark
+      left: 1px
+      top: 1px
+
+  &-secondary
+    @extend %button
+    background-color: $color-primary
+    box-shadow: 2px 2px 0 0 $color-primary-dark
+    color: $color-white
+
+    &:hover
+      background-color: lighten( $color-primary, 7.5% )
+
+    &:active
+      background-color: lighten( $color-primary, 7.5% )
+      box-shadow: 1px 1px 0 0 $color-primary-dark
+      left: 1px
+      top: 1px
+
+  &-tertiary
+    @extend %button
+    background-color: $color-secondary
+    box-shadow: 2px 2px 0 0 $color-secondary-dark
+    color: $color-white
+    font-size: $small-size
+    padding-left: ( $standard-size * 2 )
+    padding-right: ( $standard-size * 2 )
+
+    &:hover
+      background-color: lighten( $color-secondary, 7.5% )
+
+    &:active
+      background-color: lighten( $color-secondary, 7.5% )
+      box-shadow: 1px 1px 0 0 $color-secondary-dark
+      left: 1px
+      top: 1px
+
+  &-modify
+    background-color: $color-primary
+    border: 0
+    bottom: -8px
+    color: #fff
+    display: inline-block
+    font: bold $standard-size Arial, Helvetica
+    line-height: 1
+    padding: ( $standard-size / 2 ) $standard-size
+    position: absolute
+    right: $standard-size
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    +border-radius( 2px )
+    +box-shadow( 2px, 2px, 0, $color-primary-dark, false )
+
+    &:hover
+      background-color: lighten( $color-primary, 5% )
+
+    &:active
+      bottom: -9px
+      right: 9px
+      +box-shadow( 1px, 1px, 0, $color-primary-dark, false )

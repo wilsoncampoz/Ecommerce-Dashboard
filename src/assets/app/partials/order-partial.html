@@ -1,0 +1,29 @@
+<div class="order-heading">
+  <span class="order-number" ng-bind-template="Número do pedido: {{order.orderNumber}}"></span>
+  <span ng-bind-template="Realizado em: {{order.date}}"></span>
+</div>
+<div class="order-detail">
+  <div class="order-status {{order.status}}">
+    <p class="orders-status-description" ng-bind="order.statusDescription"></p>
+    <small class="order-additional-info" ng-bind="order.additionalInfo"></small>
+  </div>
+  <table class="products-table">
+    <thead>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Quantidade</th>
+      <th>Subtotal</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="product in order.products">
+        <td class="product-detail">
+          <img ng-src="{{product.image}}" title="{{product.description}}" />
+          <span class="product-description" ng-bind="product.description"></span>
+        </td>
+        <td class="product-image" ng-bind="product.price | currency:'R$' "></td>
+        <td class="product-image" ng-bind="product.amount"></td>
+        <td class="product-image" ng-bind="product.subtotal | currency:'R$' "></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

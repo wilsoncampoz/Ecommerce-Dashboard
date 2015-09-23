@@ -1,0 +1,39 @@
+{
+  "name": "Pastel",
+  "version": "0.0.3",
+  "authors": [
+    "w.oliveira542@gmail.com"
+  ],
+  "description": "Dependências do Pastel",
+  "main": "index.html",
+  "moduleType": [
+    "node",
+    "nodejs"
+  ],
+  "keywords": [
+    "bootstrap",
+    "css",
+    "less",
+    "javascript",
+    "html"
+  ],
+  "license": "MIT",
+  "homepage": "woliveiras.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "src/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "angular": "~1.4.6",
+    "angular-route": "~1.4.6",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}

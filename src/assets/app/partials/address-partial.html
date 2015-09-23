@@ -1,0 +1,6 @@
+<strong class="grid-full" ng-bind="address.receiverName"></strong>
+<span ng-bind-template="{{address.street}}, {{address.number}}"></span>
+<span ng-bind="address.neighborhood"></span>
+<span ng-bind-template="CEP: {{address.cep}}"></span>
+<span ng-bind-template="{{address.city}}, {{address.state}}"></span>
+<button class="remove-item" type="button" ng-if="$index > 0" ng-click="removeAddress($index)">x</button>

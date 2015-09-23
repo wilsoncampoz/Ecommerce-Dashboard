@@ -1,0 +1,123 @@
+{
+  "users": [
+    {
+      "id": 504311,
+      "customerInfo": {
+        "name": "Wilson Campos Gomes",
+        "telephone": "11 970361147",
+        "cpf": "37014813854",
+        "email": "wilsoncampoz@outlook.com",
+        "gender": "male",
+        "birthDate": "29/08/1990",
+        "wantNewsletter": false
+      },
+      "addresses": [
+        {
+          "receiverName": "CASA / Wilson Campos",
+          "cep": "03759030",
+          "street": "Rua Jacome Teles de Menezes",
+          "noNumber": false,
+          "number": "212",
+          "complement": "",
+          "neighborhood": "Jardim Penha",
+          "city": "São Paulo",
+          "state": "SP",
+          "addressType": "0",
+          "referencePoint": "",
+          "isMainAddress": true,
+          "$$hashKey": "object:5"
+        },
+        {
+          "receiverName": "Trabalho",
+          "cep": "09080000",
+          "street": "Figueiras",
+          "noNumber": false,
+          "number": "600",
+          "complement": "",
+          "neighborhood": "Bairo Jardim",
+          "city": "Santo Andre",
+          "state": "sp",
+          "addressType": "",
+          "referencePoint": "",
+          "isMainAddress": false
+        }
+      ],
+      "orders": [
+        {
+          "orderNumber": "51883380",
+          "date": "19/09/2015",
+          "addressID": 1,
+          "status": "approved",
+          "additionalInfo": "Previsão de entrega: 25/09/2015",
+          "statusDescription": "O seu produto foi entregue a transportadora",
+          "products": [
+            {
+              "image": "https://static.wmobjects.com.br/imgres/arquivos/ids/2548505-90-90",
+              "description": "Jogo Detetive Cartas",
+              "price": "12.90",
+              "subtotal": "12.90",
+              "amount": "1",
+              "id": 554226,
+              "$$hashKey": "object:11"
+            },
+            {
+              "image": "https://static.wmobjects.com.br/imgres/arquivos/ids/4933782-130-130/smart-tv-led-full-hd-43--lg-43lf6350-webos-3-usb-3-hdmi-wi-fi-integrado.jpg",
+              "description": "Televisão Samsumg 40 polegadas",
+              "price": "1500.00",
+              "subtotal": "3000.00",
+              "amount": 2,
+              "id": 355004,
+              "$$hashKey": "object:12"
+            }
+          ],
+          "$$hashKey": "object:5"
+        },
+        {
+          "orderNumber": "51883389",
+          "date": "25/09/2015",
+          "addressID": 2,
+          "status": "pending",
+          "additionalInfo": "Legal, seu pedido foi realizado com sucesso!",
+          "statusDescription": null,
+          "products": [
+            {
+              "image": "https://static.wmobjects.com.br/imgres/arquivos/ids/4262415-90-90",
+              "description": "Ar Condicionado Portátil 10.500 BTUs Nevada AIR300-220v",
+              "price": "12.90",
+              "subtotal": "12.90",
+              "amount": "1",
+              "id": 554226,
+              "$$hashKey": "object:28"
+            }
+          ],
+          "$$hashKey": "object:21"
+        }
+      ],
+      "info": {
+        "name": "Wilson Campos Gomes",
+        "cpf": "16103181453",
+        "telephone": "11 44266582",
+        "email": "wilsoncampoz@outlook.com",
+        "gender": "Masculino",
+        "birthDate": "29/08/1990",
+        "newPassword": "",
+        "confirmNewPassword": "",
+        "wantNewsletter": true
+      }
+    },
+    {
+      "id": 112544,
+      "customerInfo": {
+        "name": "Bruno Souza Nogueira",
+        "telephone": "11 44266582",
+        "cpf": "16103181453",
+        "email": "brunosouza@gmail.com",
+        "gender": "male",
+        "birthDate": "29/08/1970",
+        "wantNewsletter": false
+      },
+      "addresses": [],
+      "orders": []
+    }
+  ]
+}

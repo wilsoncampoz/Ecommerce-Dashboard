@@ -1,0 +1,31 @@
+<section class="main-content">
+  <h1 class="icons customer">Bem vindo a sua conta</h2>
+  <p>Aqui você acompanha seus pedidos e nos ajuda a te conhecer ainda mais</p>
+  <section class="last-orders">
+    <h2 class="section-title" ng-bind="orders.length ? 'Último pedido' : 'Você ainda não possui nenhum pedido'"></h3>
+    <ul>
+      <li class="default-box order-item" ng-repeat="order in orders | limitTo:1" ng-include="partials.order"></li>
+    </ul>
+    <button type="button" class="default-button big blue" ng-click="routeManager('/orders')">Ver todos os pedidos</button>
+  </section>
+  <section class="customer-info personal-data">
+    <h2 class="section-title">Seus dados pessoais</h3>
+    <div class="default-box section-icon customer-info">
+      <div ng-include="partials.info"></div>
+      <div class="buttons-holder">
+        <a href="/info" class="default-button big blue">Editar meus dados</a>
+      </div>
+    </div>
+  </section>
+  <section class="addresses">
+    <h2 class="section-title">Seus endereços</h3>
+    <div class="default-box section-icon addresses">
+      <ul>
+        <li class="default-box address-item section-icon address" ng-repeat="address in addresses | limitTo:3" ng-include="partials.address"></li>
+      </ul>
+      <div class="buttons-holder">
+        <a href="/info" class="default-button big blue">Editar endereços</a>
+      </div>
+    </div>
+  </section>
+</section>

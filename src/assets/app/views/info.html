@@ -1,0 +1,16 @@
+<section class="main-content">
+  <h1 class="icons personal-data">Dados Pessoais</h2>
+  <p>Mantenha sempre seus dados atualizados, fica mais fácil para nós conversarmos ;)</p>
+  <section class="personal-data">
+    <div class="default-box">
+      <div ng-include="partials.info"></div>
+      <div class="buttons-holder" ng-if="settings.lockedForm == true">
+        <button class="default-button blue" type="button" ng-click="settings.lockedForm = false">Editar meus dados</button>
+      </div>
+      <div class="buttons-holder" ng-if="settings.lockedForm == false">
+        <button class="default-button blue"  type="button" ng-click="saveData()">Salvar dados</button>
+        <button class="default-button gray"  type="button" ng-click="settings.lockedForm = true">Cancelar</button>
+      </div>
+    </div>
+  </section>
+</section>
