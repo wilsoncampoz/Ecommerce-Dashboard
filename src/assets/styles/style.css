@@ -145,6 +145,14 @@ h1 + p {
     width:33%;
     float:left;
     margin-left:10px;
+    position:relative;
+    min-height: 140px;
+}
+
+.default-box.address .remove-item {
+    position:absolute;
+    right:10px;
+    top:10px;
 }
 
 .personal-data .default-box {
